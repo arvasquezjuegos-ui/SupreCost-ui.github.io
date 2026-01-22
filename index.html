@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupreConst | Asesorías y Soluciones Tecnológicas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Index.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="page-transition">
+        <div class="page-transition-logo">SUPRE<span class="text-amber-500">CONST</span></div>
+    </div>
+    
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="#inicio" class="text-2xl font-black tracking-tighter text-white uppercase">SUPRE<span class="text-amber-500">CONST</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-300 hover:text-amber-500 font-medium transition-colors">Inicio</a>
+                    <a href="#servicios" class="text-gray-300 hover:text-amber-500 font-medium transition-colors">Servicios</a>
+                    <a href="#nosotros" class="text-gray-300 hover:text-amber-500 font-medium transition-colors">Nosotros</a>
+                    <a href="#contacto" class="text-gray-300 hover:text-amber-500 font-medium transition-colors">Contacto</a>
+                    <a href="#contacto" class="bg-amber-500 hover:bg-amber-600 text-black px-5 py-2 rounded-md font-bold transition-all hover:scale-105">Cotizar</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white hover:text-amber-500"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 absolute w-full left-0 border-t border-zinc-800">
+            <div class="px-4 py-6 space-y-4 text-center">
+                <a href="#inicio" class="block text-lg text-gray-300 hover:text-amber-500">Inicio</a>
+                <a href="#servicios" class="block text-lg text-gray-300 hover:text-amber-500">Servicios</a>
+                <a href="#nosotros" class="block text-lg text-gray-300 hover:text-amber-500">Nosotros</a>
+                <a href="#contacto" class="block text-lg text-gray-300 hover:text-amber-500">Contacto</a>
+                <a href="#contacto" class="block bg-amber-500 text-black py-3 rounded-md font-bold">Cotizar</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="relative min-h-screen flex items-center bg-gradient-to-br from-black via-zinc-900 to-black overflow-hidden pt-16">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-amber-500/10 skew-x-12 transform translate-x-1/2 hidden lg:block"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 animate-fade-in">
+                <h2 class="text-amber-500 font-bold uppercase tracking-widest text-sm">Innovación y Seguridad</h2>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight">Llevamos tu Empresa al <span class="text-amber-500">Siguiente Nivel</span></h1>
+                <p class="text-xl text-gray-400 max-w-xl">En <span class="text-white font-semibold">SupreConst</span> combinamos consultoría estratégica, tecnología web y seguridad avanzada.</p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#servicios" class="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-black font-bold text-lg rounded-lg shadow-xl flex items-center justify-center transition-all hover:-translate-y-1">Nuestros Servicios <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    <a href="#nosotros" class="px-8 py-4 border-2 border-zinc-700 hover:border-amber-500 text-white font-bold text-lg rounded-lg flex items-center justify-center transition-all">Saber Más</a>
+                </div>
+            </div>
+            <div class="hidden lg:block relative h-[500px]">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full grid grid-cols-2 gap-4">
+                    <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 shadow-2xl translate-y-8 hover:translate-y-6 transition-transform">
+                        <i class="fa-solid fa-shield-halved text-4xl text-amber-500 mb-4"></i>
+                        <h3 class="text-white font-bold text-xl mb-2">Seguridad</h3>
+                        <p class="text-gray-500 text-sm">Consultoria y ventas de equipos de protección personal.</p>
+                    </div>
+                    <div class="bg-amber-500 p-8 rounded-2xl shadow-2xl -translate-y-8 hover:-translate-y-10 transition-transform">
+                        <i class="fa-solid fa-code text-4xl text-black mb-4"></i>
+                        <h3 class="text-black font-bold text-xl mb-2">Web Pro</h3>
+                        <p class="text-zinc-900 text-sm">Interfaces que escalan tu negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20 fade-in-up">
+                <h2 class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-3">Soluciones Integrales</h2>
+                <h3 class="text-4xl md:text-5xl font-black text-zinc-900">Expertos en lo que Hacemos</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card stagger-item p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-amber-200 group">
+                    <div class="w-16 h-16 bg-black group-hover:bg-amber-500 text-amber-500 group-hover:text-black rounded-xl flex items-center justify-center text-2xl mb-6 transition-all"><i class="fa-solid fa-award"></i></div>
+                    <h4 class="text-2xl font-bold text-zinc-900 mb-4">Asesorías de Calidad</h4>
+                    <p class="text-gray-600">Optimización de estándares y aseguramiento de la excelencia.</p>
+                </div>
+                <div class="service-card stagger-item p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-amber-200 group">
+                    <div class="w-16 h-16 bg-black group-hover:bg-amber-500 text-amber-500 group-hover:text-black rounded-xl flex items-center justify-center text-2xl mb-6 transition-all"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h4 class="text-2xl font-bold text-zinc-900 mb-4">Asesorías en Proyectos</h4>
+                    <p class="text-gray-600">Gestión estratégica para el éxito de sus iniciativas.</p>
+                </div>
+                <div class="service-card stagger-item p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-amber-200 group">
+                    <div class="w-16 h-16 bg-black group-hover:bg-amber-500 text-amber-500 group-hover:text-black rounded-xl flex items-center justify-center text-2xl mb-6 transition-all"><i class="fa-solid fa-gears"></i></div>
+                    <h4 class="text-2xl font-bold text-zinc-900 mb-4">Asesorías en Procesos</h4>
+                    <p class="text-gray-600">Análisis detallado para mejorar eficiencia operativa.</p>
+                </div>
+                <div class="service-card stagger-item p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-amber-200 group">
+                    <div class="w-16 h-16 bg-black group-hover:bg-amber-500 text-amber-500 group-hover:text-black rounded-xl flex items-center justify-center text-2xl mb-6 transition-all"><i class="fa-solid fa-file-signature"></i></div>
+                    <h4 class="text-2xl font-bold text-zinc-900 mb-4">Documentación de Procesos</h4>
+                    <p class="text-gray-600">Estructuración clara de manuales corporativos.</p>
+                </div>
+                <div class="service-card stagger-item p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-amber-200 group">
+                    <div class="w-16 h-16 bg-black group-hover:bg-amber-500 text-amber-500 group-hover:text-black rounded-xl flex items-center justify-center text-2xl mb-6 transition-all"><i class="fa-solid fa-code"></i></div>
+                    <h4 class="text-2xl font-bold text-zinc-900 mb-4">Creación de Páginas y herramientas Web</h4>
+                    <p class="text-gray-600">Diseño y desarrollo de herramientas y paginas web.</p>
+                </div>
+                <div class="service-card stagger-item p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-amber-200 group">
+                    <div class="w-16 h-16 bg-black group-hover:bg-amber-500 text-amber-500 group-hover:text-black rounded-xl flex items-center justify-center text-2xl mb-6 transition-all"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4 class="text-2xl font-bold text-zinc-900 mb-4">Equipos de Seguridad</h4>
+                    <p class="text-gray-600">Consultoria avanzada y ventas de equipos de protección personal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative fade-in-left">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=800&fit=crop" alt="Equipo" class="rounded-3xl shadow-2xl border-8 border-white grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="absolute -bottom-10 -right-10 bg-amber-500 p-8 rounded-3xl shadow-2xl hidden md:block max-w-xs">
+                    <p class="text-black font-black text-3xl mb-2">SUPRE<span class="text-white">CONST</span></p>
+                    <p class="text-zinc-900 font-medium italic">"Compromiso con su eficiencia."</p>
+                </div>
+            </div>
+            <div class="space-y-6 fade-in-right">
+                <h3 class="text-4xl font-black text-zinc-900">Aliados Estratégicos</h3>
+                <p class="text-gray-600 text-lg">Integramos experiencia de consultores expertos con los mejores recursos tecnológicos disponibles.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-3 text-zinc-900 font-bold"><i class="fa-solid fa-check text-amber-500"></i> <span>Enfoque en Resultados</span></li>
+                    <li class="flex items-center space-x-3 text-zinc-900 font-bold"><i class="fa-solid fa-check text-amber-500"></i> <span>Tecnología de Punta</span></li>
+                    <li class="flex items-center space-x-3 text-zinc-900 font-bold"><i class="fa-solid fa-check text-amber-500"></i> <span>Confidencialidad Total</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div class="fade-in-left">
+                <h3 class="text-4xl font-black text-zinc-900 mb-8">¿Listo para empezar?</h3>
+                <div class="space-y-6 text-gray-600">
+                    <p><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Villa Magisterial, Santiago de los Caballeros, Santiago</p>
+                    <p><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> Info@suprecost.com</p>
+                    <p><i class="fa-solid fa-phone text-amber-500 mr-2"></i> +1 (829) 399-4444</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-xl fade-in-right">
+                <form id="contact-form" class="space-y-4">
+                    <input type="text" placeholder="Nombre Completo" required class="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-amber-500">
+                    <input type="email" placeholder="Correo" required class="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-amber-500">
+                    <select class="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+                        <option>Asesorías de Calidad</option>
+                        <option>Asesorías en Proyectos</option>
+                        <option>Creación de Páginas Web</option>
+                        <option>Equipos de Seguridad</option>
+                    </select>
+                    <textarea placeholder="Mensaje" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                    <button type="submit" class="w-full bg-black text-white font-bold py-4 rounded-xl hover:bg-amber-500 hover:text-black transition-all">Enviar Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <span class="text-3xl font-black tracking-tighter uppercase">SUPRE<span class="text-amber-500">CONST</span></span>
+            <p class="text-gray-500 mt-4">© 2026 SupreConst. Todos los derechos reservados.</p>
+            <p class="text-gray-500 mt-4">Diseño y Desarrollo:<a href="https://www.instagram.com/alinefutureconsulting/"> <u>Alinea Future</u></a></p>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 z-[100]">
+        <button id="chat-toggle" class="w-16 h-16 bg-amber-500 rounded-full shadow-2xl flex items-center justify-center text-black text-2xl hover:scale-110 transition-all animate-bounce-slow">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        <div id="chat-window" class="chat-window absolute bottom-20 right-0 w-[380px] h-[550px] bg-white rounded-2xl shadow-2xl border border-gray-200 flex-col overflow-hidden">
+            <div class="bg-gradient-to-r from-black to-zinc-900 p-4 flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center text-black"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="text-white">
+                        <p class="font-bold">Consultor SupreConst</p>
+                        <p class="text-xs text-amber-500">● En línea</p>
+                    </div>
+                </div>
+                <button id="chat-close" class="text-gray-400 hover:text-white"><i class="fa-solid fa-times text-xl"></i></button>
+            </div>
+            <div id="chat-messages" class="flex-grow overflow-y-auto p-4 space-y-4 bg-gray-50 text-sm"></div>
+            <div class="p-4 bg-white border-t border-gray-100 flex items-center space-x-2">
+                <input id="chat-input" type="text" class="flex-grow bg-gray-100 rounded-full px-4 py-3 outline-none text-sm focus:ring-2 focus:ring-amber-500" placeholder="Escribe tu consulta...">
+                <button id="chat-send" class="w-11 h-11 bg-black hover:bg-amber-500 text-white hover:text-black rounded-full flex items-center justify-center transition-all"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/Index.js"></script>
+ 
+</body>
+</html>
